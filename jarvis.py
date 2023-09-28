@@ -96,7 +96,7 @@ if __name__ == "__main__":
             speak(f"Sir, the time is {strTime}")
 
         elif 'open code' in query:
-            codePath = "C:\\Users\\prafu\\OneDrive\\Desktop\\Visual Studio Code.lnk"
+            codePath = "enter your PATH of vs code"
             os.startfile(codePath) 
         elif 'play video' in query:
             In = input("search for youtube vid:  ") 
@@ -108,10 +108,10 @@ if __name__ == "__main__":
 
         elif 'email to me' in query:
             try: 
-                rec = 'umakantmishra788@gmail.com' 
+                rec = 'receiver_mail' 
                 speak("What should I say?")
                 info = takeCommand()
-                sender =yagmail.SMTP('prafull8383@gmail.com')
+                sender =yagmail.SMTP('sender_mail')
                 sender.send(to=rec,subject='dgyf ygdea0',contents=info)    
                 
                 speak("Email has been sent!")
